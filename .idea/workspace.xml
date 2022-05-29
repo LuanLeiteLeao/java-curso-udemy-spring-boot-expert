@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/MinhaConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/VendasApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/model/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/service/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-development.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-production.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="aula 11. Trabalhando com multiplos ambientes e profiles">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/AnimalConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Cachorro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Development.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Gato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/MinhaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/MinhaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/VendasApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,9 +54,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Trabalho\IdeaProjects\CrusoDeJava\Vendas\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.luanleiteleao" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="io.github.luanleiteleao.VendasApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="VendasApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.luanleiteleao.VendasApplication" />
       <module name="Vendas" />
       <extension name="coverage">
@@ -89,6 +87,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653736577574</updated>
     </task>
+    <task id="LOCAL-00001" summary="aula 11. Trabalhando com multiplos ambientes e profiles">
+      <created>1653781481849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653781481849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aula 11. Trabalhando com multiplos ambientes e profiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 11. Trabalhando com multiplos ambientes e profiles" />
   </component>
 </project>

@@ -4,15 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="aula 11. Trabalhando com multiplos ambientes e profiles">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/AnimalConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Cachorro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Development.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Gato.java" afterDir="false" />
+    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="Aula 12. Criando annotations customizadas de configuração">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/ItemPedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/repository/Clientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/repository/ItemPedidos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/repository/Pedidos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/repository/Produtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meu_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/MinhaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/MinhaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/AnimalConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Cachorro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Development.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/Gato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/MinhaConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/VendasApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/repository/ClienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/service/ClienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-development.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-production.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +59,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Trabalho/IdeaProjects/CrusoDeJava/Vendas/src/main/resources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Trabalho/IdeaProjects/CrusoDeJava/Vendas/src/main/resources&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Trabalho\IdeaProjects\CrusoDeJava\Vendas\src\main\resources" />
@@ -74,7 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.io.github.luanleiteleao.VendasApplication" />
+        <item itemvalue="Application.VendasApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -94,8 +111,19 @@
       <option name="project" value="LOCAL" />
       <updated>1653781481849</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Aula 12. Criando annotations customizadas de configuração">
+      <created>1653783799168</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653783799168</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -110,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aula 11. Trabalhando com multiplos ambientes e profiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 11. Trabalhando com multiplos ambientes e profiles" />
+    <MESSAGE value="Aula 12. Criando annotations customizadas de configuração" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 12. Criando annotations customizadas de configuração" />
   </component>
 </project>

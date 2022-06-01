@@ -1,5 +1,7 @@
 package io.github.luanleiteleao.domain.entity;
 
+import io.github.luanleiteleao.domain.enums.StatusPedido;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -22,15 +24,19 @@ public class Pedido {
     @Column(name = "total", precision = 20, scale = 2)
     private BigDecimal total;
 
-    @OneToMany(mappedBy = "pedido")
-    private List<ItemPedido> intens;
+    @Enumerated(EnumType.STRING)
+    @Column(name="status")
+    private StatusPedido status;
 
-    public List<ItemPedido> getIntens() {
-        return intens;
+    @OneToMany(mappedBy = "pedido")
+    private List<ItemPedido> itens;
+
+    public List<ItemPedido> getItens() {
+        return itens;
     }
 
-    public void setIntens(List<ItemPedido> intens) {
-        this.intens = intens;
+    public void setItens(List<ItemPedido> itens) {
+        this.itens = itens;
     }
 
     public Integer getId() {
@@ -63,6 +69,14 @@ public class Pedido {
 
     public void setTotal(BigDecimal total) {
         this.total = total;
+    }
+
+    public StatusPedido getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusPedido status) {
+        this.status = status;
     }
 
     @Override

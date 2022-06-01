@@ -3,6 +3,8 @@ package io.github.luanleiteleao.domain.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import java.beans.XMLEncoder;
 import java.util.Set;
 
 @Entity
@@ -12,6 +14,7 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(name = "nome",length = 100)
+    @NotEmpty(message="Campo nome é obrigatório.")
     private String nome;
 
     @Column(name = "cpf", length = 11)

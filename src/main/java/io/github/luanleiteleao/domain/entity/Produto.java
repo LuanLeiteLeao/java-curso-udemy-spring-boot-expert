@@ -1,6 +1,8 @@
 package io.github.luanleiteleao.domain.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 @Entity
 @Table(name = "produto")
@@ -12,8 +14,10 @@ public class Produto {
     private Integer id;
 
     @Column(name = "descricao")
+    @NotEmpty(message = "Campo Descrição é obrigatório")
     private String descricao;
     @Column(name = "preco_unitario")
+    @NotNull(message = "Campo preço é obrigatório")
     private BigDecimal preco;
 
     public Produto(String descricao, BigDecimal preco) {

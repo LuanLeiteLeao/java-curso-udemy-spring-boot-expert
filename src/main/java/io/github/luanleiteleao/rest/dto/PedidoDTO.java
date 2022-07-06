@@ -1,14 +1,17 @@
 package io.github.luanleiteleao.rest.dto;
 
+import io.github.luanleiteleao.validation.NotEmptyList;
+
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.List;
 
 public class PedidoDTO {
-    @NotNull(message="Informe o código do cliente")
+    @NotNull(message="{campo.codigo-cliente.obrigatorio}")
     private Integer cliente;
-    @NotNull(message="Campo total do pedido é obrigatório")
+    @NotNull(message="{campo.total-pedido.obrigatorio}")
     private BigDecimal total;
+    @NotEmptyList(message = "{campo.items-pedido.obrigatorio}")
     protected List<itemPedidoDTO> items;
 
     public Integer getCliente() {

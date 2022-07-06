@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="Aula 61. Validando a entidade cliente">
+    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="Aula 63. Validando a entidade Pedido">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/config/InternacionalizacaoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/validation/NotEmptyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/validation/constraintvalidation/NotEmptyListValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/VendasApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/dto/PedidoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/dto/PedidoDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654127899905</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aula 63. Validando a entidade Pedido">
+      <created>1654129476578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654129476578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -152,6 +159,12 @@
     <MESSAGE value="aula 43. Testando a Api de Clientes no Postman" />
     <MESSAGE value="Aula 57. Patch Mapping - realizando cancelamento de pedidos" />
     <MESSAGE value="Aula 61. Validando a entidade cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 61. Validando a entidade cliente" />
+    <MESSAGE value="Aula 63. Validando a entidade Pedido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 63. Validando a entidade Pedido" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Vendas$VendasApplication.ic" NAME="VendasApplication Coverage Results" MODIFIED="1654348452953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.github.luanleiteleao.*</FILTER>
+    </SUITE>
   </component>
 </project>

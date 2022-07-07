@@ -1,7 +1,12 @@
 package io.github.luanleiteleao.config;
 
+import io.github.luanleiteleao.service.imp.UsuarioServiceImp;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -9,9 +14,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@Configuration
+@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    
+
+
+    @Autowired
+    private UsuarioServiceImp usuarioService;
+
+
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();        
@@ -21,11 +31,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         // altentica: altentica um usuário
         auth
-        .inMemoryAuthentication()
-        .passwordEncoder(passwordEncoder())
-        .withUser("user")
-        .password(passwordEncoder().encode("user"))
-        .roles("USER","ADMIM");
+                .userDetailsService(usuarioService)
+                .passwordEncoder(passwordEncoder());
 
     }
 
@@ -36,11 +43,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .csrf().disable()
         .authorizeRequests()
             .antMatchers("/api/clientes/**")
-                .hasAnyRole("USER","ADMIM")
+                .hasAnyRole("USER","ADMIN")
             .antMatchers("/api/pedidos/**")
-                .hasAnyRole("USER","ADMIM")
+                .hasAnyRole("USER","ADMIN")
             .antMatchers("/api/produtos/**")
-                .hasRole("ADMIM")
+                .hasRole("ADMIN")
+            .antMatchers(HttpMethod.POST,"/api/usuarios")
+                .permitAll()
+            .anyRequest().authenticated()
             .and()
                 .httpBasic();
     }

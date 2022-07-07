@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="Aula 68. Adicinado Java Security">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="4b63ed30-f32b-4f36-a2da-03326890c904" name="Changes" comment="Aula 76. Testando a autenticação com cadastro de usuarios">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/entity/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/domain/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/rest/controller/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/service/imp/UsuarioServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657067541167</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Aula 69. Adicinado SecurityConfig, biblioteca descontinuada">
+      <created>1657105503031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657105503031</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -169,7 +183,20 @@
     <MESSAGE value="Aula 61. Validando a entidade cliente" />
     <MESSAGE value="Aula 63. Validando a entidade Pedido" />
     <MESSAGE value="Aula 68. Adicinado Java Security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 68. Adicinado Java Security" />
+    <MESSAGE value="Aula 69. Adicinado SecurityConfig, biblioteca descontinuada" />
+    <MESSAGE value="Aula 76. Testando a autenticação com cadastro de usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 76. Testando a autenticação com cadastro de usuarios" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/luanleiteleao/service/imp/UsuarioServiceImp.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Vendas$VendasApplication.ic" NAME="VendasApplication Coverage Results" MODIFIED="1654348452953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
